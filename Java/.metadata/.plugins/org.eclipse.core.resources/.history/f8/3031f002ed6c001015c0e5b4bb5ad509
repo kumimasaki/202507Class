@@ -1,0 +1,25 @@
+package lesson3_3.file_ex;
+
+import java.io.File;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		// ファイルクラスを使ってファイルを指定
+		File file = new File("practice2.txt");
+		
+		// ファイルの作成
+		// もしファイルが存在していない場合は、ファイルを作成して、絶対パスを出力
+		// 存在していたら、ファイルのサイズを出力する
+		if(!file.exists()) {
+			// ファイルが存在しない場合
+			try {
+				// ファイルを作成
+				file.createNewFile();
+				// ファイルの絶対パスを出力
+				System.out.println(file.getAbsolutePath());
+			}
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+package lesson3_2.practice3;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// マップの宣言
+		Map<String, Integer> scores = new HashMap<String, Integer>();
+
+	}
+
+}

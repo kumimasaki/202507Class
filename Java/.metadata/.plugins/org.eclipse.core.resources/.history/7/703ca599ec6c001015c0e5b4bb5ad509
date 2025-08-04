@@ -1,0 +1,11 @@
+package lesson3_3.file_ex;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		// ファイルクラスを使ってファイルを指定
+		File file = new File("practice2.txt");
+
+	}
+
+}

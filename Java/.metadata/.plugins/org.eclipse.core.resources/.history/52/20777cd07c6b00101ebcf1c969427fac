@@ -1,0 +1,14 @@
+package lesson3_2.practice1;
+
+public class Student {
+	// メンバ変数
+	// 名前
+	// 年齢
+	// 学籍番号
+	
+	// コンストラクタ
+	
+	// getter, setter
+	
+	// toStringのオーバーライド
+}

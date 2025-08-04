@@ -1,0 +1,24 @@
+package lesson3_3.regex_ex;
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+		// isUsernameValidの呼び出し
+		System.out.println(isUsernameValid("Alice1234"));
+		System.out.println(isUsernameValid("%&_"));
+		// isPasswordValidの呼び出し
+	}
+	
+	// isUsernameValidメソッド
+	public static boolean isUsernameValid(String userName) {
+		// 大文字と小文字の英文字と数字のみで長さは0にできない(1以上)
+		return userName.matches("[A-Za-z0-9]+");
+	}
+	
+	// isPasswordValidメソッド
+	public static boolean isPasswordValid(String password) {
+		// 英文字、数字、アンダースコアのみで長さは8以上
+		return password.matches("[A-Za-z0-9_]{8,}");
+	}
+
+}

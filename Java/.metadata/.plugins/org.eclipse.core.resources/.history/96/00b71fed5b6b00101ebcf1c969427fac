@@ -1,0 +1,17 @@
+package lesson3_2.list_ex;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// リストの宣言
+		List<String> studentName = new ArrayList<String>();
+		// データの挿入
+		studentName.add("Alice");
+		studentName.add("Bob");
+		studentName.add("Carol");
+	}
+
+}

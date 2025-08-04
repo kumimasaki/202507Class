@@ -1,0 +1,40 @@
+package lesson3_2.list_ex;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// リストの宣言
+		List<String> studentName = new ArrayList<String>();
+		// データの挿入
+		studentName.add("Alice");
+		studentName.add("Bob");
+		studentName.add("Carol");
+		// 要素を指定して追加
+		studentName.add(3, "Dave");
+		// データの削除
+		studentName.remove(3);
+		studentName.remove("Alice");
+		// 全てのデータを一括削除
+//		studentName.removeAll(studentName);
+		// ある条件に基づいて削除
+//		studentName.removeIf(name -> name.startsWith("B"));
+		// データの取得
+		System.out.println(studentName.get(0));
+		// データの上書き
+		studentName.set(0, "Kitty");
+		// 要素の個数の取得
+		System.out.println(studentName.size());
+		
+		// 拡張for文
+		for(String name : studentName) {
+			System.out.println(name);
+		}
+		
+		// 不可変なリスト
+		List<String> name = List.of("Taro", "Hana");
+		name.add("Jiro");
+	}
+}

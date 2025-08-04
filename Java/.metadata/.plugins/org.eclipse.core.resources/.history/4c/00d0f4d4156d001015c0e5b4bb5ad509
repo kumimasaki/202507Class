@@ -1,0 +1,18 @@
+package lesson3_3.other_class;
+
+import java.util.Scanner;
+
+public class ScannerEx {
+
+	public static void main(String[] args) {
+
+		try (Scanner scan = new Scanner(System.in)) {
+			System.out.println("名前を入力してEnterを押してください");
+			String name = scan.nextLine();
+			System.out.println("年齢を入力してEnterを押してください");
+			int age = scan.nextInt();
+			System.out.println("あなたの名前は" + name + "で年齢は" + age + "です！");
+		}
+	}
+
+}

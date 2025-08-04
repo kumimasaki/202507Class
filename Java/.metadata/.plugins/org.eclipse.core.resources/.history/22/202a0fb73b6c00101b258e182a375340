@@ -1,0 +1,16 @@
+package lesson3_2.stream_ex;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// リストの宣言
+		List<String> names = new ArrayList<String>();
+		names.add("Bob");
+		names.add("Alice");
+		names.add("Carol");
+		names.add("Alice");
+		names.add("Dave");
+
+	}
+
+}

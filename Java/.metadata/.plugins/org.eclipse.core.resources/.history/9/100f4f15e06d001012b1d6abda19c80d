@@ -1,0 +1,66 @@
+package lesson3_2.practice5;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class MenuManager {
+
+	//	map = {
+	//	  "sandwich" : ["ハンバーガー", "チーズバーガー"],
+	//	  "drink"    : ["コーラ", "ミネラルウォーター"],
+	//	  "sidemenu" : ["ポテト", "ナゲット"]
+	//	}
+	//	private Map<String, List<String>> map = new HashMap<>();
+
+	// ここにフィールドを追加
+	private Map<String, List<String>> map = new HashMap<>();
+
+	// コンストラクタ
+	public MenuManager() {
+		// サンドイッチメニューの登録
+		List<String> list = new ArrayList<>();
+		list.add("ハンバーガー");
+		list.add("チーズバーガー");
+		list.add("ダブルチーズバーガー");
+		map.put("sandwich", list);
+
+		// ドリンクメニューの登録
+		list = new ArrayList<>();
+		list.add("コーラ");
+		list.add("オレンジジュース");
+		list.add("ミネラルウォーター");
+		map.put("drink", list);
+
+		// サイドメニューの登録
+		list = new ArrayList<>();
+		list.add("フライドポテト");
+		list.add("チキンナゲット");
+		list.add("フレンチサラダ");
+		map.put("sidemenu", list);
+
+	}
+
+	// ここにsearchMenuを作成
+	public void searchMenu(String menu) {
+		for (String key : map.keySet()) {
+			if (map.get(key).contains(menu)) {
+				System.out.println(menu + "は" + key + "に含まれています。");
+				return;
+			}
+		}
+		System.out.println("該当するメニューはありません。");
+	}
+
+	// ここにsetMenuを作成
+	public void setMenu(String category, String menu) {
+		// map.get(category):指定したカテゴリに対応するメニュー一覧（List）を取得
+		map.get(category).add(menu);
+	}
+
+	// ここに showMenu を作成する。
+	public void showMenu(String category) {
+		System.out.println(map.get(category));
+	}
+}

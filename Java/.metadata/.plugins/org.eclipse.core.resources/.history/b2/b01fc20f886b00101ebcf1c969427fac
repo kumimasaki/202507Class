@@ -1,0 +1,14 @@
+package lesson3_2.practice2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Listの宣言
+		List<Integer> list = new ArrayList<Integer>();
+		
+		
+	}
+}

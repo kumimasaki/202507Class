@@ -1,0 +1,31 @@
+package lesson3_2.practice3;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// マップの宣言
+		Map<String, Integer> scores = new HashMap<String, Integer>();
+		scores.put("Alice", 80);
+		scores.put("Bob", 65);
+		scores.put("Carol", 90);
+		scores.put("Dave", 55);
+		scores.put("Eve", 70);
+
+		// 平均点の計算
+		int total = 0;
+		for(String data : scores.keySet()) {
+			total += scores.get(data);
+		}
+		int average = total / scores.size();
+		
+		for(String data : scores.keySet()) {
+			if(scores.get(data) >= average) {
+				System.out.println(data);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+package lesson3_2.practice1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// Mapの宣言（HashMap）
+		// キー：Alice バリュー：Aliceの全ての情報（名前、年齢、学籍番号）
+		Map<String, Student> students = new HashMap<String, Student>();
+
+		// データの追加 ※キーは名前、バリューは生徒の情報
+
+		// キー「Alice」を指定して、Aliceの生徒の情報を表示する
+
+	}
+
+}

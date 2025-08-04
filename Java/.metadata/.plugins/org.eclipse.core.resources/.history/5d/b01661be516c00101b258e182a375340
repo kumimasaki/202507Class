@@ -1,0 +1,20 @@
+package lesson3_2.stream_ex.practice1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// (1)インスタンスを作成し、HashMapに格納
+		Map<String, Person> personMap = new HashMap<String, Person>();
+		
+		// (2)キーを含むか
+		
+		// (3)拡張for分でのコンソール出力
+		
+		// (4)拡張for分でのコンソール出力 Math.max
+
+	}
+
+}
