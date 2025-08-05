@@ -1,0 +1,35 @@
+*{
+    font-size: 20px;
+    /* pタグには適応されてしまう */
+    /* color: aqua; */
+}
+
+/* idの指定 */
+#li-color{
+    color: red;
+}
+
+/* クラスの指定 */
+.text-color{
+    color: blue;
+}
+
+/*idを指定して色をred*/
+#contents{
+    color: red;
+}
+
+/*クラスを指定して色をblue*/
+.section{
+    color: blue;
+}
+
+/* 箇条書きの点を消す方法 */
+ul{
+    list-style: none;
+}
+
+/* リンクの下線を消す */
+a{
+    text-decoration: none;
+}
