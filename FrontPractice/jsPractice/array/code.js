@@ -19,3 +19,22 @@ arr2[0] = 12;
 arr2[1] = "hello";
 // コンソールに出力
 console.log(arr2);
+
+// オブジェクトの書き方
+let obj = { name: "Alice", id: 122, isStudent: false };
+console.log(obj);
+console.log(obj.name);
+console.log(obj["name"]);
+// 値の上書きの仕方
+obj.id = 200;
+console.log(obj.id);
+
+// for-of
+for (let tmp of arr) {
+    console.log(tmp);
+}
+
+// for-in
+for(let key in obj){
+    console.log(key + "：" + obj[key]);
+}
